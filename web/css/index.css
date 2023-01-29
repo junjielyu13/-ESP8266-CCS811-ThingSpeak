@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+}
+
+body {
+    position: relative;
+    font-size: 16;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+
+.header {
+    display: flex;
+    flex-direction: row;  
+    justify-content: flex-start;
+    align-items: center; 
+    margin: 0 auto;
+    width: 100%;
+    height: 55px;
+    background-color: #2f7eb2;
+    padding-left: 10%;
+}
+
+
+.header a {
+    display: inline-block;
+    width: 155px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+.mobile-header{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+
+
+.mobile-icon{
+    width: 80%;
+    height: 20%;
+    display: block;
+    background-color: #fff;
+    border-radius: 25%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+}
+
+
+@media screen and (min-width: 400px) {
+    .mobile-icon {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .header a{
+        display: none;
+    }
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+.title {
+    margin: 40px auto;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.main-title {
+    font-size: 30px;
+}
+
+.sub-title {
+    font-size: 32px;
+}
+
+.description {
+    margin: 0 auto;
+    width: 80%;
+    font-size: 20px;
+}
+
+
+
+.main {
+    margin: 40px auto;
+    text-align: center;
+    height: 300px;
+}
+
+.top,
+.bottom {
+    margin: 0 auto;
+    width: 90%;
+    height: 200px;
+}
+
+.top-left,
+.top-right,
+.bottom-left,
+.bottom-right {
+    width: 270px;
+    height: 80px;
+    line-height: 80px;
+    background-color: #46bc79;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.top-left a,
+.top-right a,
+.bottom-left a,
+.bottom-right a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+}
+
+.footer-pos {
+    padding-top: 11px;
+    width: 80%;
+    padding-left: 10%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.footer-left {
+    float: left;
+}
+
+.footer-left a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-right {
+    float: right;
+}
