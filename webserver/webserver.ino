@@ -1,24 +1,8 @@
 #include "ESP8266WiFi.h"
 #include "ThingSpeak.h"
 #include "DFRobot_CCS811.h"
+#include "config.h"
 
-// char ssid[] = "MyWiFi_8266";
-// char password[] = "password";
-
-const char* ssid = "MIWIFI_2G_bPkR";  // Your wireless network name (SSID)
-const char* password = "4J5cnqEP";    // Your wireless netword password
-
-// ThingSpeak information
-const char* web = "https://thingspeak.com/channels/1991175";
-char thingSpeakAddress[] = "api.thingspeak.com";
-unsigned long channelID = 1991175;
-char* writeAPIKey = "YL11BUSH85GYKLTD";
-char* readAPIKey = "7GVSONR74G5OGXLH";
-unsigned int postingInterval = 20 * 1000;
-unsigned int RSSIField = 1;
-unsigned int AirQualityField = 2;
-unsigned int CO2Field = 3;
-unsigned int TVOCField = 4;
 
 WiFiClient client;
 DFRobot_CCS811 CCS811;
@@ -26,7 +10,6 @@ DFRobot_CCS811 CCS811;
 
 // Set web server port number to 80
 WiFiServer server(80);
-
 
 // Variable to store the HTTP request
 String header;
@@ -41,10 +24,8 @@ const long timeoutTime = 2000;
 
 
 int writeTSData(long TSChannel, unsigned int TSField, float data) {
-// int writeTSData(long TSChannel) {
   // Write the data to the channel
   int writeSuccess = ThingSpeak.writeField(TSChannel, TSField, data, writeAPIKey);
-  // int writeSuccess = ThingSpeak.writeFields(TSChannel, writeAPIKey);
   if (writeSuccess == 200) {
     Serial.println("Channel update successful.");
   } else {
@@ -62,10 +43,6 @@ void setup() {
     // wait for serial port to connect. Needed for native USB port only
     delay(1000);
   }
-  // Serial.println("WiFi access point test");
-  // WiFi.mode(WIFI_AP);
-  // WiFi.softAP(ssid, password);
-  // Serial.println("WiFi on");
 
   // Initialize ThingSpeak
   ThingSpeak.begin(client);
