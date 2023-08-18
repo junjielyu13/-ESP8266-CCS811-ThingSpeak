@@ -18,5 +18,7 @@ unsigned int AirQualityField = 2;
 unsigned int CO2Field = 3;
 unsigned int TVOCField = 4;
 
+unsigned int CO2FieldThreshold = 1000;
+unsigned int TVOCFieldThreshold = 100;
 
 #endif 

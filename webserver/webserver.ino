@@ -128,6 +128,16 @@ void loop() {
               writeTSData(channelID, TVOCField, tvocppb);
             }
 
+            long co2ppm = CCS811.getCO2PPM();
+            if(co2ppm > CO2FieldThreshold){
+              writeTSData(channelID, CO2Field, co2ppm);
+            }
+
+            long tvocppb = CCS811.getTVOCPPB();
+            if(co2ppm > CO2FieldThreshold){
+              writeTSData(channelID, TVOCField, tvocppb);
+            }
+
             printWeb(client);
 
 
