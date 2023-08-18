@@ -36,7 +36,7 @@ The purpose of this project is to create a Wi-Fi enabled web server that can sen
 - Development tools:
   - [Arduino IDE](https://www.arduino.cc/en/software)
 
-Any hardware needed can be purchased online
+Any hardware needed can be purchased online.
 
 ## Install
 
