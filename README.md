@@ -2,9 +2,9 @@
 
 # ESP8266 + CCS811 + ThingSpeak: Air Quality Web Server
 
-![cover](.etc/ESP8266_SERVER.png)
+![cover](assets/ESP8266_SERVER.png)
 
-![cover](.etc/ThingSpeak.png)
+![cover](assets/ThingSpeak.png)
 
 </div>
 
@@ -60,7 +60,7 @@ Clone to local directory:
 
 <div align="center">
 
-![harware4](.etc/plan.png)
+![harware4](assets/plan.png)
 
 </div>
 
@@ -80,31 +80,31 @@ Clone to local directory:
 
 ## Hardware
 
-![harware1](.etc/foto_1.jpg)
+![harware1](assets/foto_1.jpg)
 
 The hardware is based on the adafruit-feather-huzzah ESP8266 board and uses an CCS811 Air Quality Sensor (Breakout) to check the air condition and quality. Wire seen in the schematic are variable and will depend on the specifications of on the versionCSS811.
 
 ## Testing
 
-![harware2](.etc/foto_2-1.png) ![harware3](.etc/foto_2-2.png)
+![harware2](assets/foto_2-1.png) ![harware3](assets/foto_2-2.png)
 
 It can be easily seen that when we use a lighter close to the CCS811 air detector, the value displayed by arduino changes
 
 ## Service Structure
 
-![harware2](.etc/structure.png)
+![harware2](assets/structure.png)
 
 To explain the çlient-server structure, we can see the diagram, which perfectly explains the project. The first thing that caught our attention was the web server, which is the web page returned by our access to port 80 of the ESP8266 server. As the backend, ESP8266 is responsible for processing the request from the web server, obtaining the data required by the request from ESP8266 and CCS811Z according to the request, and finally sending it to the web page through ThinkSpeak.
 
 # Web Server
 
-![harware3](.etc/ESP8266_SERVER.png)
+![harware3](assets/ESP8266_SERVER.png)
 
 The web server records User actions and automatically sends warning when air quality thresholds are exceeded.
 
 # ThingSpeak
 
-![cover](.etc/ThingSpeak.png)
+![cover](assets/ThingSpeak.png)
 
 ThingSpeak used to accept Web server requests and automatically form tables
 
