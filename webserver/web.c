@@ -284,7 +284,7 @@ void printWeb(WiFiClient client){
                         <div class='footer-item'>Autors:
                             <a href='https://github.com/junjielyu13'>@Junjie Li,</a>
                         </div>
-                        <div class='footer-item'>©2022 Xarxa, UB.</div>
+                        <div class='footer-item'>©2022.</div>
                     </div>
 
 
