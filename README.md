@@ -88,7 +88,7 @@ The hardware is based on the adafruit-feather-huzzah ESP8266 board and uses an C
 
 ![harware2](assets/foto_2-1.png) ![harware3](assets/foto_2-2.png)
 
-It can be easily seen that when we use a lighter close to the CCS811 air detector, the value displayed by arduino changes
+It can be easily seen that when we use a lighter close to the CCS811 air detector, the value displayed by arduino changes.
 
 ## Service Structure
 
@@ -106,7 +106,7 @@ The web server records User actions and automatically sends warning when air qua
 
 ![cover](assets/ThingSpeak.png)
 
-ThingSpeak used to accept Web server requests and automatically form tables
+ThingSpeak used to accept Web server requests and automatically form tables.
 
 ## Documentation
 
