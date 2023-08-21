@@ -110,7 +110,7 @@ ThingSpeak used to accept Web server requests and automatically form tables.
 
 ## Documentation
 
-more documentation [here]().
+More documentation [here]().
 
 - ThingSpeak Arduino: https://github.com/mathworks/thingspeak-arduino
 - Adafruit Feather HUZZAH ESP8266 https://www.generationrobots.com/media/
